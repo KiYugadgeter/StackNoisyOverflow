@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "StackNoisyNotifier",
+
+    "background": {
+        "scripts": ["background-script.js"]
+    },
+
+    "permissions": [
+        "*://api.stackexchange.com/*",
+        "webRequest",
+        "alarms",
+        "notifications",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/stackexchange-19.png",
+            "38": "icons/stackexchange-38.png"
+        },
+        "default_title": "Stackexchange Notifier enable"
+    }
+}
